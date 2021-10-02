@@ -1,0 +1,277 @@
+/*  CSS Reset  */
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* CSS variables */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+#navbar{
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:0px;
+    height:75px;
+
+}
+
+/*  Navbar Logo and image */
+#logo{
+    margin:12px 13px;
+
+}
+
+#logo img{
+    margin:5px 13px;
+    width:57px;
+    height:77x;
+    border:2px solid black;
+    border-radius:65px;
+
+}
+/*  Navbar List styling */
+
+ul{
+    display:flex;
+    justify-content: center;
+}
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    opacity:0.4;
+
+}
+#navbar ul li{
+    
+    list-style:none;
+    font-size:1.2rem;
+}
+
+#navbar ul li a{
+    display:block;
+    padding:12px 12px;
+    text-decoration:none;
+
+
+}
+#navbar ul li a{
+    color:white;
+    font-family: 'Baloo Da 2', cursive;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color:white;
+    border-radius:34px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+/* Section Home */
+
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:12px 200px;
+    height:250px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content:"";
+    position:absolute;
+    z-index: -1;
+    background:url('../background.jpg') no-repeat center center/cover;
+    height:150%;
+    width:100%;
+    top:0px;
+    left:0px;
+    opacity:0.89;
+
+}
+
+
+#home h1{
+    color:black;
+    text-align:center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#home p{
+    color:black;
+    text-align:center;
+    font-size:1.0rem;
+    font-family: 'Baloo Da 2', cursive;
+}
+/* Section Services */
+.service-container{
+    height: 100px;
+}
+.services{
+    margin:12px;
+    display:flex;
+}
+.services .box{
+    border:2px solid black;
+    margin:4px;
+    border-radius:12px;
+    padding:12px;
+    background-color:#f1edf1;
+}
+.services .box img{
+    display:block;
+    height:150px;
+    margin:auto;
+    padding:12px;
+    
+    
+}
+.services .box p{
+    text-align:center;
+}
+
+
+/* Client Section */
+#client-section::before {
+    content:'';
+    position:absolute;
+    z-index:-1;
+    opacity:0.4;
+    background:url('../pic.jpg');
+    width:100%;
+    height:136%;
+
+
+}
+#client-section .heading{
+
+    font-size:2.0rem;
+    font-family: 'Baloo Da 2', cursive;
+    
+}
+#client-section{
+    position:relative;
+    top:-15px;
+}
+#client{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+#client img{
+    width:100px;
+    height:100px;
+    border:2px solid black;
+    border-radius:45px;
+    
+    
+
+}
+.client-item{
+    padding:12px;
+    margin:12px;
+    
+}
+
+/* Contact Section */
+
+#contact{
+    position:relative;
+    top: 60px;
+
+}
+
+#contact::before{
+    content:'';
+    position:absolute;
+    background:url(../contact.jpg) no-repeat center center/cover;
+    z-index:-1;
+    opacity:0.3;
+    height:100%;
+    width:100%;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding:34px;
+    position:relative;
+    left:-116px;
+    top:px;
+}
+
+#contact-box form{
+    width:18%;
+}
+#contact-box form label{
+    font-size:1.3rem;
+}
+#contact-box form input,#contact-box textarea{
+    width:250%;
+    padding:0.4rem;
+    border-radius:9px;
+    font-size:1.1rem;
+}
+.btn1{
+    background-color: blue;
+    color:white;
+    padding:4px;
+    margin-top:12px;
+    border-radius:15px;
+    width:91px;
+}
+
+
+
+/* footer */
+footer{
+    position: relative;
+    top: 53px;
+    background-color: black;
+    color: white;
+    height: 24px;
+
+    
+}
+
+
+/* Utility classes */
+.h-primary{
+    font-family: 'Baloo Da 2', cursive;
+    font-size:1.8rem;
+    padding:12px;
+}
+.h-secondary{
+    font-family: 'Baloo Da 2', cursive;
+    padding:12px;
+    font-size:1.4rem;
+}
+.btn{
+    font-family: 'Baloo Da 2', cursive;
+    color:white;
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:black;
+    border-radius:23px;
+    font-size:0.9rem;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
+
